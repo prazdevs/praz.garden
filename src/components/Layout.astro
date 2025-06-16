@@ -13,28 +13,29 @@ import '../styles/global.css'
     <meta name='viewport' content='width=device-width, initial-scale=1' />
     <meta name="robots" content="noarchive">
     <link rel='icon' type='image/x-icon' href='/favicon.ico' />
-    <link rel='preload' type='font/woff2' href='/fonts/shantell-sans.woff2' as='font' crossorigin />
     <title>PraZ' garden</title>
   </head>
   <body>
-    <header class='site-header'>
-      <a class='site-logo' href='/'>
-        <svg
-          xmlns='http://www.w3.org/2000/svg'
-          width='32'
-          height='32'
-          viewBox='0 0 36 36'
-        >
-          <path fill='#946AEA' d='M32 28H4V4a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4z' />
-          <path
-            d='M8 36h20a4 4 0 0 0 4-4v-4c-4.117-2.744-21.139-8.233-28 0v4a4 4 0 0 0 4 4'
-            fill='#404040'
-          />
-          <circle cx='15.276' cy='12.495' r='7.578' fill='#e5e5e5' />
-        </svg>
-        <span>PraZ' garden</span>
-      </a>
-      <ThemeToggle />
+    <header>
+      <nav class='site-header'>
+        <a class='site-logo' href='/'>
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            width='32'
+            height='32'
+            viewBox='0 0 36 36'
+          >
+            <path fill='#946AEA' d='M32 28H4V4a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4z' />
+            <path
+              d='M8 36h20a4 4 0 0 0 4-4v-4c-4.117-2.744-21.139-8.233-28 0v4a4 4 0 0 0 4 4'
+              fill='#404040'
+            />
+            <circle cx='15.276' cy='12.495' r='7.578' fill='#e5e5e5' />
+          </svg>
+          <span>PraZ' garden</span>
+        </a>
+        <ThemeToggle />
+      </nav>
     </header>
     <main>
       <slot />

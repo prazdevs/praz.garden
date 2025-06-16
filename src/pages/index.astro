@@ -1,5 +1,7 @@
 ---
+import { Image } from 'astro:assets'
 import { getCollection } from 'astro:content'
+import chibi from '../assets/chibi.png'
 import Layout from '../components/Layout.astro'
 
 const notes = await getCollection('notes')
@@ -7,7 +9,14 @@ const notes = await getCollection('notes')
 
 <Layout>
   <div class='banner'>
-    <img class='chibi' src='chibi.webp' alt='' height='200' width='197' />
+    <Image
+      class='chibi'
+      src={chibi}
+      densities={[1, 2]}
+      alt=''
+      height='200'
+      width='197'
+    />
     <h1 class='title'>I'm Sacha<sup>(they/any)</sup></h1>
   </div>
   <p class='description'>
